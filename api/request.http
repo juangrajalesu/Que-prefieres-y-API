@@ -1,0 +1,35 @@
+@api = http://localhost:3001
+
+
+GET {{api}}/questions
+
+
+###
+
+POST {{api}}/questions
+Content-Type: application/json
+
+{
+    "question":"¿Qué prefieres?",
+    "firstAnswer":"a",
+    "secondAnswer":"b"
+}
+
+###
+
+@id = 60f0c9dda06295123838c04f
+GET {{api}}/questions/{{id}}
+
+###
+
+PUT {{api}}/questions/{{id}}
+content-type: application/json
+
+{
+    "counterFirstAnswer":"70",
+    "counterSecondAnswer":"30"
+}
+
+###
+
+DELETE {{api}}/questions/{{id}}
