@@ -1,0 +1,70 @@
+html {
+  min-height: 100%;
+  position: relative;
+}
+
+body {
+  margin: 0;
+  margin-bottom: 40px;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  justify-content: center;
+  display: flex;
+}
+
+.container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.progress {
+  height: 38px;
+}
+
+/* Animaciones */
+.skip {
+  transition: transform 250ms ease;
+}
+
+.skip:hover {
+  transform: translateY(15px);
+}
+
+.question {
+  transition: scale 0.5s;
+  animation-name: agrandar;
+  animation-duration: 0.5s;
+}
+
+@keyframes agrandar {
+  0% {
+    transform: scale(0.1);
+  }
+}
+
+.centered {
+  margin: auto;
+  margin-top:30%;
+  margin-bottom: 30%;
+  
+}
+
+
+
+@media only screen and (min-width: 1060px) {
+  .centered {
+    margin: auto;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+}
